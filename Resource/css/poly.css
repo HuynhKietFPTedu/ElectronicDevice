@@ -1,0 +1,124 @@
+* {
+    margin: 0 auto;
+  }
+header{
+    position: relative;
+    max-width: 100% !important;
+}
+
+body{
+    font-size: small !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.form-control{
+    font-size: small !important;
+}
+a{
+    font-size: small;
+    
+}
+.shopping-mall{
+    margin-top: 5% !important;
+    bottom: 20px;
+    font-variant: small-caps;
+}
+.shopping-mall>h1{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow:  0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+.shopping-mall>h5{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+        
+.navbar{
+    margin-bottom:0px;
+    font-size: large;
+}
+
+.glyphicon{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-item{
+    margin: 5px 10px;
+}
+
+.nav-link{
+    transition: 0.15s;
+    transform: scale(1.1);
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+
+.nav-link:hover{
+    transition: 0.15s;
+    transform: scale(1.1);
+    border-radius: 5px;
+    text-decoration: none !important;
+    background-color: rgb(24, 26, 25) !important;
+}
+.dropdown-item:hover{
+    transition: 0.5s;
+    background-color: rgb(216, 216, 216) !important;
+}
+
+.dropdown-item{
+    background-size: 100%;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255) !important;
+}
+.poly-cart{
+    margin-top: 5px;
+}
+.poly-cart ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;
+}
+.poly-cart .card-header strong{
+    font-variant: small-caps;
+    font-size: medium !important;
+    text-shadow: 0 0 2px darkgray;
+}
+.poly-prod{
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .card-body img{
+    height: 150px;
+    max-width: 95%;
+}
+.d-flex>a{
+    padding: 10px;
+    color: darkgray;
+}
+.carousel-inner img{
+    margin: 0 auto;
+    scale: 0.5;
+    max-width: 95%;
+}
+.img-thumbnail{
+    height: 100px !important;
+    max-width: 95% !important;
+}
+.img-thumbnail > img{
+    max-width: 95% !important;
+}
+.col-sm-4 > img{
+    max-width: 95%;
+}
+.card-title{
+    font-size: large !important;
+}

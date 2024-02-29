@@ -1,0 +1,79 @@
+<div class="container">
+    <article class="text-center productDetail ">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-2 text-start">
+                <div class="col">
+                    <img ng-src="../{{productDetails.link}}" alt="" />
+                    <legend class="text-left fs-5">Hàng liên quan</legend>
+                    <fieldset class="d-flex g-3 g-lg-4 justify-content-between">
+                        <img src="../Resource/images/2.png" alt="" class="img-thumbnail p-2">
+                        <img src="../Resource/images/3.png" alt="" class="img-thumbnail p-2">
+                        <img src="../Resource/images/4.png" alt="" class="img-thumbnail p-2">
+                        <img src="../Resource/images/5.png" alt="" class="img-thumbnail p-2">
+                    </fieldset>
+                </div>
+
+                <ul class="col">
+                    <ol class="mb-3 fs-3">{{productDetails.name}}</ol>
+                    <ol class="mb-3 text-start titleFlashSale">Flash Sale <span class="fw-bold fs-3">{{productDetails.sale}}%</span></ol>
+
+                    <ol class="mb-3"><span class="label label-danger">
+                            <span class="badge bg-secondary fst-normal text-decoration-line-through">{{productDetails.price |currency}}</span>
+                            <span class="badge bg-danger fs-6 ">{{productDetails.price - productDetails.price*productDetails.sale/100 |currency}}</span>
+                    </ol>
+                    <ol class="mb-3">Vận Chuyển: <img src="../Resource/images/freeship.png" width="50px" alt=""><span
+                            class="badge bg-success"> Miễn Phí Vận Chuyển</span></ol>
+                    <ol class="row-cols-3 mb-2 row-cols-lg-3 d-inline-flex text-start">
+                        <label class="form-label col" for="quantity">Số lượng</label>
+                        <input type="number" min="1" value="1" class="form-control col w-25 h-25" ng-model="$scope.$parent.buy" max="{{productDetails.quantity - productDetails.sold}}">
+                        <p class="text-end">Số lượng còn lại
+                            <span class="badge bg-primary bg-gradient">{{productDetails.quantity - productDetails.sold}}</span>
+                        </p>
+                    </ol>
+                    <p>Giá <span class="badge bg-danger fw-bold fs-6" >{{(productDetails.price - productDetails.price*productDetails.sale/100) * $scope.$parent.buy | currency}}</span></p>
+                    <ol>
+                        <button class="btn btn-outline-primary" ng-click="AddToCart(productDetails)">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-success" >Mua ngay</button>
+                    </ol>
+                </ul>
+
+            </div>
+            <h4 class="text-start mt-5">Chi tiết sản phẩm</h4>
+            <div class="text-start row">
+                <div class="col-6 d-flex align-items-start ">
+                    Danh mục:
+                    <span class="d-block align-items-start" >{{productDetails.category}}</span>
+                </div>
+                <div class="col-6 d-flex align-items-start">
+                    Gửi từ:
+                    <span class="d-block align-items-start">{{productDetails.country}}</span>
+                </div>
+                <div class="col-6 d-flex align-items-start">
+                    Số lượng đã bán:
+                    <span class="d-block align-items-start">{{productDetails.sold}}</span>
+                </div>
+                <div class="col-6 d-flex align-items-start">
+                    Ngày sản xuất:
+                    <span class="d-block align-items-start">{{productDetails.date}}</span>
+                </div>
+            </div>
+            <h4 class="text-start mt-5">Mô tả sản phẩm</h4>
+            <div class="text-start">
+                <p><strong>Terms of Service</strong></p>
+                <p>Our Terms of Service were last updated on [___DATE___].</p>
+                <p>Please read these terms and conditions carefully before using Our Service.</p>
+                <p><strong>Interpretation and Definitions</strong></p>
+                <p><strong>Interpretation</strong></p>
+                <p>The words of which the initial letter is capitalized have meanings defined under the following
+                    conditions. The following definitions shall have the same meaning regardless of whether they
+                    appear in singular or in plural.</p>
+                <p><strong>Definitions</strong></p>
+                <p>For the purposes of these Terms of Service:</p>
+
+            </div>
+        </div>
+
+    </article>
+
+
+</div>
