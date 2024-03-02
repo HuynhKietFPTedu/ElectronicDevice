@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Resource/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/Resource/css/Assignment.css">
+    <link rel="stylesheet" href="/Resource/css/bootstrap.css">
+    <link rel="stylesheet" href="/Resource/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="/Resource/images/Logo.png">
+    <title>Login</title>
+
+    <script src="/Resource/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+    <div class="container d-flex signUp p-0 w-100 mb-5">
+        <div class="text-center w-75">
+            <header class="fs-3 position-relative fw-bold text-light w-100">ĐĂNG NHẬP TÀI KHOẢN</header>
+            <form name="form1" class="form-group mt-5 mb-5">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username"
+                            name="checkusername" ng-model="user.username" ng-maxlength="10" ng-minlength="3">
+                        <label for="floatingInputGroup1">Username</label>
+                    </div>
+                </div>
+                <i ng-hide="form1.checkusername.$valid" class="mb-3 text-danger fw-bolder">Username phải từ 3-10 kí
+                    tự</i>
+
+                <div class="form-floating ">
+                    <input type="password" class="form-control" id="Password" required placeholder="Password"
+                        ng-model="user.pass" name="checkpass" ng-maxlength="12" ng-minlength="4">
+                    <label for="floatingPassword">Mật khẩu</label>
+                </div>
+
+                <i ng-hide="form1.checkpass.$valid" class="mb-3 text-danger fw-bolder">password phải từ 4-12 kí tự</i>
+
+
+
+                <br>
+                <button type="submit" class="btn btn-primary d-inline-flex m-5" ng-click="Login()">
+                    Đăng nhập
+                </button>
+                <br>
+                <div id="Hinh" class="d-inline ">
+                    <a href="#" class="m-2"><img src="/Resource/images/Google.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="/Resource/images/x.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="/Resource/images/facebook.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="/Resource/images/Apple.png" alt=""></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>

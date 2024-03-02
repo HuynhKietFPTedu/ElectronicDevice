@@ -1,0 +1,11 @@
+1. Làm database sản phẩm, người dùng bằng js 	5% //
+2. Làm SPA: các trang, //
+    khi lọc sản phẩm   	10%
+3. Truyền dữ liệu từ danh mục qua chi tiết 	10% //
+4. Thêm vào giỏ hàng, xóa sửa sản phẩm trong giỏ hàng          20%
+5. Tìm kiếm, //
+     lọc	20%
+6. đăng ký, đăng nhập, đổi mật khẩu	15% //
+7. thông báo lỗi form 
+đăng nhập, // 
+đăng kí	10%

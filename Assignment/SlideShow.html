@@ -1,0 +1,103 @@
+<div id="carouselExample" class="carousel slide ">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="#!Detail.html">
+                <img src="/Resource/images/banner1.jpg" class="d-flex w-100" alt=".">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#!Detail.html">
+                <img src="/Resource/images/banner2.jpg" class="d-flex w-100" alt=".">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#!Detail.html">
+                <img src="/Resource/images/banner3.jpg" class="d-flex w-100" alt=".">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#!Detail.html">
+                <img src="/Resource/images/banner4.jpg" class="d-flex w-100" alt=".">
+            </a>
+        </div>
+    </div>
+    <button class="carousel-control-prev m-auto " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next m-auto" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<div class="container text-center ">
+    <h3 class="mt-5 titleCategory">Danh mục</h3>
+    <div class="row row-cols-10 row-cols-lg-10 g-3 g-lg-5 justify-content-between" role="group"
+        aria-label="Basic example" id="category">
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/phone_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Điện thoại</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/laptop_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Laptop</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/camera_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Máy ảnh</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/watch_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Đồng hồ</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/Appliances_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Thiết bị gia dụng</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/sport_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Thể thao</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/sport_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Thể thao</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/Appliances_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Thiết bị gia dụng</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/watch_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Đồng hồ</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/camera_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Máy ảnh</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/laptop_type.png" type="button" class=" card-img-top p-3" alt=""></img>
+            <p>Laptop</p>
+        </a>
+        <a class="col category text-decoration-none" href="#!Product.html">
+            <img src="/Resource/images/phone_type.png" type="button" class=" card-img-top p-3" alt="" alt=""></img>
+            <p>Điện thoại</p>
+        </a>
+    </div>
+
+    <h3 class="mb-5 titleFlashSale">Flash Sale</h3>
+    <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-4">
+        <div class=" text-center col " ng-repeat="p in listproducts">
+            <a class="card p-3 text-decoration-none product" href="#!Detail.html" ng-click="showProductDetails(p)">
+                <img class="card-img-top" ng-src="/{{p.link}}" alt="Title" />
+                <p class="card-text m-auto">{{p.name}}</p>
+                <button class="btn btn-danger mt-auto">{{p.price - p.price*p.sale/100 |currency}}</button>
+            </a>
+        </div>
+
+
+    </div>
+    <a href="#!Product.html"><button class="btn btn-primary text-center mt-5 ">Xem tất cả sản phẩm</button></a>
+
+</div>
