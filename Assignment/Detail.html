@@ -3,13 +3,13 @@
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-2 text-start">
                 <div class="col">
-                    <img ng-src="/{{productDetails.link}}" alt="" />
+                    <img ng-src="{{productDetails.link}}" alt="" />
                     <legend class="text-left fs-5">Hàng liên quan</legend>
                     <fieldset class="d-flex g-3 g-lg-4 justify-content-between">
-                        <img src="/Resource/images/2.png" alt="" class="img-thumbnail p-2">
-                        <img src="/Resource/images/3.png" alt="" class="img-thumbnail p-2">
-                        <img src="/Resource/images/4.png" alt="" class="img-thumbnail p-2">
-                        <img src="/Resource/images/5.png" alt="" class="img-thumbnail p-2">
+                        <img src="Resource/images/2.png" alt="" class="img-thumbnail p-2">
+                        <img src="Resource/images/3.png" alt="" class="img-thumbnail p-2">
+                        <img src="Resource/images/4.png" alt="" class="img-thumbnail p-2">
+                        <img src="Resource/images/5.png" alt="" class="img-thumbnail p-2">
                     </fieldset>
                 </div>
 
@@ -21,7 +21,7 @@
                             <span class="badge bg-secondary fst-normal text-decoration-line-through">{{productDetails.price |currency}}</span>
                             <span class="badge bg-danger fs-6 ">{{productDetails.price - productDetails.price*productDetails.sale/100 |currency}}</span>
                     </ol>
-                    <ol class="mb-3">Vận Chuyển: <img src="/Resource/images/freeship.png" width="50px" alt=""><span
+                    <ol class="mb-3">Vận Chuyển: <img src="Resource/images/freeship.png" width="50px" alt=""><span
                             class="badge bg-success"> Miễn Phí Vận Chuyển</span></ol>
                     <ol class="row-cols-3 mb-2 row-cols-lg-3 d-inline-flex text-start">
                         <label class="form-label col" for="quantity">Số lượng</label>
