@@ -245,16 +245,16 @@
 
     app.config(function ($routeProvider) {
         $routeProvider
-            .when("/Contact.html", { templateUrl: "Contact.html" })
-            .when("/ChangePassword.html", { templateUrl: "ChangePassword.html", controller: 'changeCtrl' })
-            .when("/Signup.html", { templateUrl: "Signup.html", controller: 'signupCtrl' })
-            .when("/Login.html", { templateUrl: "Login.html", controller: 'loginCtrl' })
-            .when("/Contact.html", { templateUrl: "Contact.html" })
-            .when("/Product.html", { templateUrl: "Product.html", controller: 'productCtrl' })
-            .when("/Payment.html", { templateUrl: "Payment.html" })
-            .when("/Detail.html", { templateUrl: "Detail.html", controller: 'detailCtrl' })
-            .when("/Cart.html", { templateUrl: "Cart.html", controller: 'cartCtrl' })
-            .when("/", { templateUrl: "SlideShow.html", controller: 'productCtrl' })
+            .when("/Contact.html", { templateUrl: "/Assignment/Contact.html" })
+            .when("/ChangePassword.html", { templateUrl: "/Assignment/ChangePassword.html", controller: 'changeCtrl' })
+            .when("/Signup.html", { templateUrl: "/Assignment/Signup.html", controller: 'signupCtrl' })
+            .when("/Login.html", { templateUrl: "/Assignment/Login.html", controller: 'loginCtrl' })
+            .when("/Contact.html", { templateUrl: "/Assignment/Contact.html" })
+            .when("/Product.html", { templateUrl: "/Assignment/Product.html", controller: 'productCtrl' })
+            .when("/Payment.html", { templateUrl: "/Assignment/Payment.html" })
+            .when("/Detail.html", { templateUrl: "/Assignment/Detail.html", controller: 'detailCtrl' })
+            .when("/Cart.html", { templateUrl: "/Assignment/Cart.html", controller: 'cartCtrl' })
+            .when("/", { templateUrl: "/Assignment/SlideShow.html", controller: 'productCtrl' })
             .otherwise({ redirectTo: '/' })
     });
 
